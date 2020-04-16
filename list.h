@@ -1,6 +1,3 @@
-//
-// Created by Helen on 01.04.2020.
-//
 
 #ifndef LAB1_LIST_H
 #define LAB1_LIST_H
