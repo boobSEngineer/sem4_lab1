@@ -65,7 +65,13 @@ public:
         if (tree.root != nullptr) {
             tree.root->print();
         }
-        std::cout << "}";
+        std::cout << "}\n";
+    }
+
+    void debug() {
+        std::cout << "debug map tree:\n";
+        tree.debug_tree();
+        std::cout << "\n";
     }
 
     List<KEY_T>& get_keys() {
