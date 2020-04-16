@@ -105,12 +105,14 @@ public:
 
     void clear() {
         Node* node = first;
-        while (node != &_end) {
+        while (node != nullptr && node != &_end) {
+            Node* next = node->next;
             delete(node);
-            node = node->next;
+            node = next;
         }
         _end.next = _end.prev = nullptr;
         first = last = nullptr;
+        length = 0;
     }
 
     int get_length() {
